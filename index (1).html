@@ -7,6 +7,11 @@
     <title>Wonderlust Travel- Destination Majorca</title>
 </head>
 <body>
+    <a href="#intro" class="sr-only">Skip to main content</a> <!--A little confused on what to put here-->
+    <a href="#plan-your-trip" class="sr-only">Skip to plan your trip</a>
+    <a href="#testimonials" class="sr-only">Skip to testimonials</a>
+    <a href="#about-your-destination" class="sr-only">Skip to about your destination</a>
+    <a href="#contact-us" class="sr-only">Skip to contact us</a>
 
     <header>
         Destination Majorca
@@ -42,6 +47,12 @@
 
                     404px, 920px, 1280px
                     -->
+                    <picture>
+                        <source media="(min-width: 404px)" srcset="images/majorca-beach-square-s.jpg"/>
+                        <source media="(min-width: 920px)" srcset="images/majorca-beach-vertical-m.jpg"/>
+                        <source media="(min-width: 1280px)" srcset="images/majorca-beach-horizontal-l.jpg"/>
+                        <img src="images/majorca-beach-horizontal-l.jpg" alt="view of beach and some waves"/>
+                    </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
@@ -89,12 +100,20 @@
                 Testimonials
 
                 <section>
-                    <!--Responsive Image for resolution switching
+                    <!--Responsive Image for resolution switching KEEPING THESE COMMENTS FOR REFERENCE
                         images/miranda-blake-L.png" 
                         images/miranda-blake-S.png 404w
                         images/miranda-blake-M.png 920w
                         images/miranda-blake-L.png 1280w
                     -->
+                        <img
+                            alt="Blond woman with sunglasses looks left"
+                            srcset="
+                            images/miranda-blake-S.png 404w,
+                            images/miranda-blake-M.png 920w,
+                            images/miranda-blake-L.png 1280w
+                            "
+                        >
                         <div>
                         Miranda Blake
                         <dl>
@@ -111,6 +130,14 @@
                         images/max-winter-M.png 920w
                         images/max-winter-L.png 1280w
                     -->
+                        <img
+                        alt="Brownish-blond haired man in a brown button up"
+                        srcset="
+                        images/max-winter-S.png 404w,
+                        images/max-winter-M.png 920w,
+                        images/max-winter-L.png 1280w
+                        "
+                        >
                         <div>
                         Max Winter
                         <dl>
@@ -121,12 +148,21 @@
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
+                    <!--Responsive Image for resolution switching 
                         images/ines-villegoes-L.png
                         images/ines-villegoes-S.png 404w
                         images/ines-villegoes-M.png 920w
                         images/ines-villegoes-L.png 1280w 
                     -->
+                        <img
+                            alt="Woman in police uniform and has reddish hair"
+                            srcset="
+                            images/ines-villegoes-L.png 404w,
+                            images/ines-villegoes-M.png 920w,
+                            images/ines-villegoes-L.png  1280w
+                            "
+                        >
+
                     <div>
                         Inés Villegoes
                         <dl>
@@ -143,6 +179,14 @@
                         images/carmen-lorenzo-M.png 920w
                         images/carmen-lorenzo-L.png 1280w
                     -->
+                        <img
+                        alt=""
+                        srcset="
+                        images/carmen-lorenzo-S.png 404w,
+                         images/carmen-lorenzo-M.png 920w,
+                         images/carmen-lorenzo-L.png 1280w
+                        "
+                        >
                         <div>
                         Carmen Lorenzo
                         <dl>
