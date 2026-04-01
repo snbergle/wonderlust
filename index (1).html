@@ -218,38 +218,38 @@
             Contact Us <span id="required">(*required)</span>
             
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="form-fname">First Name<span id="required">*</span></label>
+                    <input type="text" id="form-fname" name="form-fname" autocomplete="given-name">
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="form-lname">Last Name<span id="required">*</span></label>
+                    <input type="text" id="form-lname" name="form-lname" autocomplete="family-name">
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="form-email">Email<span id="required">*</span></label>
+                    <input type="email" id="form-email" name="form-email" autocomplete="email"> 
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="form-phone">Phone<span id="required">*</span></label>
+                    <input type="tel" id="form-phone" name="form-phone" autocomplete="tel">
                 </div>
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
+                <legend>Preferred Contact Method<span id="required">*</span></legend>
                     <div> 
-                        <input>
-                        <label>Email</label>
+                        <input type="radio" id="contact-email" name="pref-method" value="email" checked>
+                        <label for="contact-email">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="contact-text" name="pref-method" value="text">
+                        <label for="contact-text">Text</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Phone</label>
+                        <input type="radio" id="contact-phone" name="pref-method" value="phone">
+                        <label for="contact-phone">Phone</label>
                     </div>
                 </fieldset>
                 <fieldset id="destination">
-                    <legend>Destination<span>*</span></legend>
+                    <legend>Destination<span id="required">*</span></legend>
                     <select id="select-destination">
                         <option>Choose</option>
                         <option>Barcelona</option>
@@ -264,7 +264,7 @@
                     </select>
                 </fieldset>
                 <fieldset id="travelTime">
-                    <legend>Travel Time<span>*</span></legend>
+                    <legend>Travel Time<span id="required">*</span></legend>
                     <select id="select-travel-time">
                         <option>Choose</option>
                         <option>Fall</option>
@@ -274,7 +274,7 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
+                <input type="submit" id="submit">
             
         </section>
         <section id="legal">
